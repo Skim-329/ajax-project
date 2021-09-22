@@ -1,16 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a,
+button {
+  font-family: 'nunito', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: rgb(176, 176, 176);
+  text-decoration: none;
+}
+
 header {
-  background-color: black;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  padding: 30px 10%;
+  background-color: black;
 }
 
 .logo {
-  width: 40%;
-  height: auto;
+  cursor: pointer;
+  margin-right: auto;
 }
 
-.dropBar {
-  max-width: 40%;
-  height: auto;
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+  margin-top: 18px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: rgb(63, 220, 38);
+}
+
+button {
+  padding: 10px 25px;
+  background-color: rgb(157, 82, 232);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-top: 18px;
+}
+
+button:hover {
+  color: rgb(63, 220, 38);
 }
