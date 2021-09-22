@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col,
+.col-half {
+  padding: 0 0.5rem;
+  width: 100%;
+}
+
+@media only screen and (min-width: 576px) {
+  .col-half { width: 50%; }
+}

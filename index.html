@@ -11,18 +11,41 @@
 </head>
 <body>
   <header>
-    <img class="logo" src="images/ActualLogo.svg" alt="logo">
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">About</a></li>
-      </ul>
-    </nav>
-    <a class="fav" href="#"><button>Favorites</button></a>
+    <img class="logo" src="images/Logo.svg" alt="logo">
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="#">Favorites</a>
+        <a href="#">About</a>
+      </div>
+    </div>
   </header>
   <main>
     <div class="row">
-      <div class="column-full">
-        <h1>Discover which wines pair best with your meal!</h1>
+      <div class="col-half">
+        <div class="discover">
+          <h1>Discover which wines pair best with your meal!</h1>
+        </div>
+          <hr>
+        <div class="access">
+          <h3>Get access to thousands of wines based on meal and price range.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-half">
+        <form>
+          <label for="food">What will you be eating?</label><br>
+          <input type="text" id="food" name="food" value="i.e. Steak"><br>
+          <label for="price">What is your price range?</label><br>
+          <select name="price">
+            <option value="5-10">$5 - $10</option>
+            <option value="10-15">$10 - $15</option>
+            <option value="15-30">$15 - $30</option>
+            <option value="30-50">$30 - $50</option>
+            <option value="50-100">$50 - $100</option>
+          </select>
+        </form>
       </div>
     </div>
   </main>
