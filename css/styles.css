@@ -1,0 +1,16 @@
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 40%;
+  height: auto;
+}
+
+.dropBar {
+  max-width: 40%;
+  height: auto;
+}
