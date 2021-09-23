@@ -21,31 +21,32 @@
     </div>
   </header>
   <main>
-    <div class="row">
-      <div class="col-half">
-        <div class="discover">
-          <h1>Discover which wines pair best with your meal!</h1>
-        </div>
+    <div class="view" data-view="landing-page">
+      <div class="row">
+        <div class="col-half">
+          <div class="discover">
+            <h1>Discover which wines pair best with your meal!</h1>
+          </div>
           <hr>
-        <div class="access">
-          <h3>Get access to thousands of wines based on meal and price range.</h3>
+          <div class="access">
+            <h3>Get access to thousands of wines based on meal and price range.</h3>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-half">
-        <form>
-          <label for="food">What will you be eating?</label><br>
-          <input type="text" id="food" name="food" value="i.e. Steak"><br>
-          <label for="price">What is your price range?</label><br>
-          <select name="price">
-            <option value="5-10">$5 - $10</option>
-            <option value="10-15">$10 - $15</option>
-            <option value="15-30">$15 - $30</option>
-            <option value="30-50">$30 - $50</option>
-            <option value="50-100">$50 - $100</option>
-          </select>
-        </form>
+        <div class="col-half">
+          <form>
+            <label class="whatFood" for="food">What will you be eating?</label><br>
+            <input class="text" type="text" id="food" name="food" placeholder="e.g. Steak" required="required"><br>
+            <label class="priceRange" for="price">What is your price range?</label><br>
+            <select class="price" name="price" required="required">
+              <option class="opt" value="5-10">$5 - $10</option>
+              <option class="opt" value="10-15">$10 - $15</option>
+              <option class="opt" value="15-30">$15 - $30</option>
+              <option class="opt" value="30-50">$30 - $50</option>
+              <option class="opt" value="50-100">$50 - $100</option>
+            </select>
+            <input type="submit" name="submit" value="SUBMIT">
+          </form>
+        </div>
       </div>
     </div>
   </main>
