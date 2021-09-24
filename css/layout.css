@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 main {
   max-width: 575px;
   margin: 0 auto;

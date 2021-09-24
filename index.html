@@ -33,19 +33,30 @@
           </div>
         </div>
         <div class="col-half">
-          <form>
+          <form id="main-form">
             <label class="whatFood" for="food">What will you be eating?</label><br>
             <input class="text" type="text" id="food" name="food" placeholder="e.g. Steak" required="required"><br>
-            <label class="priceRange" for="price">What is your price range?</label><br>
-            <select class="price" name="price" required="required">
-              <option class="opt" value="5-10">$5 - $10</option>
-              <option class="opt" value="10-15">$10 - $15</option>
-              <option class="opt" value="15-30">$15 - $30</option>
-              <option class="opt" value="30-50">$30 - $50</option>
-              <option class="opt" value="50-100">$50 - $100</option>
-            </select>
-            <input type="submit" name="submit" value="SUBMIT">
+            <label class="priceRange" for="price">What is your maximum price?</label><br>
+            <input class="price" type="text" id="price" name="price" placeholder="e.g. 50" required="required">
+            <input class="subbutton" type="submit" name="submit" value="SUBMIT">
           </form>
+        </div>
+      </div>
+    </div>
+    <div class="view" data-view="rec-page">
+      <div class="row">
+        <div class="col-half">
+          <div class="discover">
+            <h1>Based on your selections...</h1>
+          </div>
+          <hr>
+        </div>
+        <div id="winerec">
+        </div>
+        <div class="col-half">
+          <div id="wine-image">
+
+          </div>
         </div>
       </div>
     </div>
