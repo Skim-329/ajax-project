@@ -1,4 +1,10 @@
 var accessForm = document.querySelector('#main-form');
+var $views = document.querySelectorAll('.view');
+var $favs = document.querySelector('.favs');
+var $about = document.querySelector('.about');
+var $logo = document.querySelector('.logo');
+var $home = document.querySelector('.homepagebtn');
+var $home2 = document.querySelector('.homepagebtn2');
 
 function getWine(event) {
   event.preventDefault();
@@ -33,5 +39,37 @@ function getWine(event) {
     }
   });
   xhr.send();
+  viewRecs(event);
 }
 accessForm.addEventListener('submit', getWine);
+
+function viewPage(pageName) {
+  for (var i = 0; i < $views.length; i++) {
+    if ($views[i].getAttribute('data-view') === pageName) {
+      $views[i].className = 'view';
+    } else {
+      $views[i].className = 'view hidden';
+    }
+  }
+}
+
+function viewRecs(event) {
+  viewPage('rec-page');
+}
+
+function viewFavs(event) {
+  viewPage('favorite-page');
+}
+$favs.addEventListener('click', viewFavs);
+
+function viewAbout(event) {
+  viewPage('about-page');
+}
+$about.addEventListener('click', viewAbout);
+
+function viewLandingPage(event) {
+  viewPage('landing-page');
+}
+$logo.addEventListener('click', viewLandingPage);
+$home.addEventListener('click', viewLandingPage);
+$home2.addEventListener('click', viewLandingPage);
