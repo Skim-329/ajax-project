@@ -157,8 +157,16 @@ input[type=submit] {
 
 #wine-image {
   padding-top: 55px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   width: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.addtofav {
+  padding-bottom: 15px;
+  width: 30px;
   margin: 0 auto;
   display: flex;
   justify-content: center;

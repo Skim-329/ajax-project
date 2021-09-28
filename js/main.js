@@ -3,6 +3,7 @@ var $views = document.querySelectorAll('.view');
 var $favs = document.querySelector('.favs');
 var $about = document.querySelector('.about');
 var $logo = document.querySelector('.logo');
+var $addtofavs = document.querySelector('.addtofav');
 var $home = document.querySelector('.homepagebtn');
 var $home2 = document.querySelector('.homepagebtn2');
 var $home3 = document.querySelector('.homepagebtn3');
@@ -72,6 +73,7 @@ function viewLandingPage(event) {
   viewPage('landing-page');
 }
 $logo.addEventListener('click', viewLandingPage);
+$addtofavs.addEventListener('click', viewFavs);
 $home.addEventListener('click', viewLandingPage);
 $home2.addEventListener('click', viewLandingPage);
 $home3.addEventListener('click', viewLandingPage);
