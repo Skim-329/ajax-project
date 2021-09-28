@@ -42,6 +42,7 @@ function getWine(event) {
   });
   xhr.send();
   viewRecs(event);
+  document.querySelector('#main-form').reset();
 }
 accessForm.addEventListener('submit', getWine);
 
