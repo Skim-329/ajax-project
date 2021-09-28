@@ -6,10 +6,10 @@ var data = {
   nextEntryId: 1
 };
 
-var journals = localStorage.getItem('data');
+var wines = localStorage.getItem('data');
 
-if (journals !== null) {
-  data = JSON.parse(journals);
+if (wines !== null) {
+  data = JSON.parse(wines);
 }
 
 window.addEventListener('beforeunload', function (event) {
