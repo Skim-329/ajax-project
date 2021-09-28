@@ -5,6 +5,7 @@ var $about = document.querySelector('.about');
 var $logo = document.querySelector('.logo');
 var $home = document.querySelector('.homepagebtn');
 var $home2 = document.querySelector('.homepagebtn2');
+var $home3 = document.querySelector('.homepagebtn3');
 
 function getWine(event) {
   event.preventDefault();
@@ -73,3 +74,4 @@ function viewLandingPage(event) {
 $logo.addEventListener('click', viewLandingPage);
 $home.addEventListener('click', viewLandingPage);
 $home2.addEventListener('click', viewLandingPage);
+$home3.addEventListener('click', viewLandingPage);

@@ -194,3 +194,19 @@ input[type=submit] {
   margin: auto;
   margin-bottom: 50px;
 }
+
+.homepagebtn3 {
+  width: 120px;
+  height: 35px;
+  background-color: rgb(63, 220, 38);
+  color: white;
+  font-family: nunito, sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: none;
+  float: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+}
