@@ -1,18 +1,17 @@
 /* exported data */
 var data = {
-  view: 'landing-page',
-  entries: [],
-  editing: null,
-  nextEntryId: 1
+  entries: []
 };
 
-var wines = localStorage.getItem('data');
+var wines = localStorage.getItem('favino');
 
 if (wines !== null) {
   data = JSON.parse(wines);
 }
 
-window.addEventListener('beforeunload', function (event) {
+var $favsHeart = document.querySelector('.addtofav');
+
+$favsHeart.addEventListener('click', function (event) {
   var dataJSON = JSON.stringify(data);
-  localStorage.setItem('data', dataJSON);
+  localStorage.setItem('favino', dataJSON);
 });
