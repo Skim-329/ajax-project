@@ -3,7 +3,7 @@ var $views = document.querySelectorAll('.view');
 var $favs = document.querySelector('.favs');
 var $about = document.querySelector('.about');
 var $logo = document.querySelector('.logo');
-var $favsHeart = document.querySelector('.addtofav');
+var $favsHeart = document.getElementById('addtofav');
 var $home = document.querySelector('.homepagebtn');
 var $home2 = document.querySelector('.homepagebtn2');
 var $home3 = document.querySelector('.homepagebtn3');
@@ -36,11 +36,13 @@ function getWine(event) {
       wineTitle = xhr.response.productMatches[0].title;
       newImage.setAttribute('src', imageUrl);
       wineImage.appendChild(newImage);
+      $favsHeart.className = 'view';
     } else {
       var newBadEl = document.createElement('h3');
       var newBadText = document.createTextNode('No matches were found. Please try again.');
       newBadEl.appendChild(newBadText);
       winerec.appendChild(newBadEl);
+      $favsHeart.className = 'view hidden';
     }
   });
   xhr.send();
@@ -108,7 +110,7 @@ function insertContent(entry) {
 }
 
 var $newLI = document.querySelector('ul');
-
+// console.log(data);
 for (var i = 0; i < data.entries.length; i++) {
   var $entry = insertContent(data.entries[i]);
   $newLI.appendChild($entry);
