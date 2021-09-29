@@ -14,6 +14,8 @@ function getWine(event) {
   event.preventDefault();
   var winerec = document.querySelector('#winerec');
   var wineImage = document.querySelector('#wine-image');
+  winerec.innerHTML = '';
+  wineImage.innerHTML = '';
 
   var xhr = new XMLHttpRequest();
   var url = 'https://api.spoonacular.com/food/wine/pairing';
@@ -110,7 +112,6 @@ function insertContent(entry) {
 }
 
 var $newLI = document.querySelector('ul');
-// console.log(data);
 for (var i = 0; i < data.entries.length; i++) {
   var $entry = insertContent(data.entries[i]);
   $newLI.appendChild($entry);

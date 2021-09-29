@@ -3,15 +3,13 @@ var data = {
   entries: []
 };
 
-var wines = localStorage.getItem('favino');
+var wines = localStorage.getItem('data');
 
 if (wines !== null) {
   data = JSON.parse(wines);
 }
 
-var $favsHeart = document.querySelector('.addtofav');
-
-$favsHeart.addEventListener('click', function (event) {
+window.addEventListener('beforeunload', function (event) {
   var dataJSON = JSON.stringify(data);
-  localStorage.setItem('favino', dataJSON);
+  localStorage.setItem('data', dataJSON);
 });
