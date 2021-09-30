@@ -157,8 +157,16 @@ input[type=submit] {
 
 #wine-image {
   padding-top: 55px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   width: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+#addtofav {
+  padding-bottom: 15px;
+  width: 30px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -193,4 +201,74 @@ input[type=submit] {
   display: block;
   margin: auto;
   margin-bottom: 50px;
+}
+
+.homepagebtn3 {
+  width: 120px;
+  height: 35px;
+  background-color: rgb(63, 220, 38);
+  color: white;
+  font-family: nunito, sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: none;
+  float: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 40px;
+}
+
+.content {
+  display: block;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+.nameOfFavWine {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.picOfFavWine {
+  display: block;
+  margin: 0 auto;
+}
+
+.modal {
+  visibility: hidden;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(34, 29, 29, 0.9);
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  width: 40%;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
 }

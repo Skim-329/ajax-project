@@ -21,7 +21,7 @@
     </div>
   </header>
   <main>
-    <div class="view" data-view="landing-page"> <!-- Home page -->
+    <div class="view" data-view="landing-page">
       <div class="row">
         <div class="col-half">
           <div class="mainText">
@@ -29,7 +29,7 @@
           </div>
           <hr>
           <div class="subText">
-            <h3>Get access to thousands of wines based on meal and price range.</h3>
+            <h3>Get access to thousands of wines based on meal and maximum price.</h3>
           </div>
         </div>
         <div class="col-half">
@@ -43,35 +43,56 @@
         </div>
       </div>
     </div>
-    <div class="view" data-view="rec-page"> <!-- Recommendation Page -->
+    <div class="view hidden" data-view="rec-page">
+      <div class="modal">
+        <div class="modal-content">
+          <h3>Added to Favorites!</h3>
+        </div>
+      </div>
       <div class="row">
-        <div class="col-half">
+        <div class="col">
           <div class="mainText">
             <h1>Based on your selections...</h1>
           </div>
           <hr>
+        </div>
+        <div class="col-half">
           <div id="winerec">
-            <!-- Placement of wine recommendation from API -->
+
           </div>
         </div>
         <div class="col-half">
           <div id="wine-image">
-          <!-- Placement of wine image from API  -->
+
           </div>
+          <img class="view hidden" id="addtofav" src="images/addtofav.svg" alt="addtofav">
+        </div>
+        <div class="col">
           <button class="homepagebtn" type="button">HOME</button>
         </div>
       </div>
     </div>
-    <div class="view" data-view="favorite-page"> <!-- Favorite Page-->
+    <div class="view hidden" data-view="favorite-page">
       <div class="row">
-        <div class="col-half">
+        <div class="col">
+          <div class="mainText">
+            <h1>Favorites</h1>
+          </div>
+          <hr>
+        </div>
+        <div class="col">
+          <ul class="myFavorites">
 
+          </ul>
+        </div>
+        <div class="col">
+          <button class="homepagebtn2" type="button">HOME</button>
         </div>
       </div>
     </div>
-    <div class="view" data-view="about-page"> <!-- About Page-->
+    <div class="view hidden" data-view="about-page">
       <div class="row">
-        <div class="col-half">
+        <div class="col">
           <div class="mainText">
             <h1>About</h1>
           </div>
@@ -83,7 +104,7 @@
               is a wine pairing app which allows you to input a type of food and set a maximum
               price to discover which wine pairs best with those inputs! Enjoy!</h3>
           </div>
-          <button class="homepagebtn2" type="button">HOME</button>
+          <button class="homepagebtn3" type="button">HOME</button>
         </div>
       </div>
     </div>
