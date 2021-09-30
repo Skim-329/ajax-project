@@ -221,6 +221,24 @@ input[type=submit] {
 
 ul {
   list-style-type: none;
+  margin-top: 40px;
+}
+
+.content {
+  display: block;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+.nameOfFavWine {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.picOfFavWine {
+  display: block;
+  margin: 0 auto;
 }
 
 .modal {

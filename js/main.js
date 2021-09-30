@@ -85,7 +85,7 @@ $favsHeart.addEventListener('click', addToFavs);
 $home.addEventListener('click', viewLandingPage);
 $home2.addEventListener('click', viewLandingPage);
 $home3.addEventListener('click', viewLandingPage);
-
+// adding to favorites //
 function addToFavs(event) {
   event.preventDefault();
   var favEntry = {
@@ -100,9 +100,11 @@ function insertContent(entry) {
   $LI.setAttribute('class', 'content');
 
   var $title = document.createElement('h3');
+  $title.setAttribute('class', 'nameOfFavWine');
   $title.textContent = entry.title;
 
   var $image = document.createElement('img');
+  $image.setAttribute('class', 'picOfFavWine');
   $image.setAttribute('src', entry.imageUrl);
 
   $LI.appendChild($title);
@@ -116,7 +118,7 @@ for (var i = 0; i < data.entries.length; i++) {
   var $entry = insertContent(data.entries[i]);
   $newLI.appendChild($entry);
 }
-
+// modal stuff //
 var modal = document.querySelector('.modal');
 
 function toggleModal() {
