@@ -69,6 +69,12 @@ function viewRecs(event) {
 
 function viewFavs(event) {
   viewPage('favorite-page');
+  var newLI = document.querySelector('ul');
+  newLI.innerHTML = '';
+  for (var i = 0; i < data.entries.length; i++) {
+    var $entry = insertContent(data.entries[i]);
+    newLI.appendChild($entry);
+  }
 }
 $favs.addEventListener('click', viewFavs);
 
@@ -113,11 +119,6 @@ function insertContent(entry) {
   return $LI;
 }
 
-var $newLI = document.querySelector('ul');
-for (var i = 0; i < data.entries.length; i++) {
-  var $entry = insertContent(data.entries[i]);
-  $newLI.appendChild($entry);
-}
 // modal stuff //
 var modal = document.querySelector('.modal');
 
