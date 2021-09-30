@@ -92,7 +92,7 @@ function addToFavs(event) {
     title: wineTitle,
     imageUrl: imageUrl
   };
-  data.entries.push(favEntry);
+  data.entries.unshift(favEntry);
 }
 
 function insertContent(entry) {
@@ -100,7 +100,7 @@ function insertContent(entry) {
   $LI.setAttribute('class', 'content');
 
   var $title = document.createElement('h3');
-  $title.textContent = entry.wineTitle;
+  $title.textContent = entry.title;
 
   var $image = document.createElement('img');
   $image.setAttribute('src', entry.imageUrl);
@@ -116,3 +116,18 @@ for (var i = 0; i < data.entries.length; i++) {
   var $entry = insertContent(data.entries[i]);
   $newLI.appendChild($entry);
 }
+
+var modal = document.querySelector('.modal');
+
+function toggleModal() {
+  modal.classList.toggle('show-modal');
+}
+
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
+  }
+}
+
+$favsHeart.addEventListener('click', toggleModal);
+window.addEventListener('click', windowOnClick);
