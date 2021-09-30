@@ -91,7 +91,7 @@ $favsHeart.addEventListener('click', addToFavs);
 $home.addEventListener('click', viewLandingPage);
 $home2.addEventListener('click', viewLandingPage);
 $home3.addEventListener('click', viewLandingPage);
-// adding to favorites //
+
 function addToFavs(event) {
   event.preventDefault();
   var favEntry = {
@@ -119,7 +119,6 @@ function insertContent(entry) {
   return $LI;
 }
 
-// modal stuff //
 var modal = document.querySelector('.modal');
 
 function toggleModal() {
