@@ -26,5 +26,13 @@ main {
 }
 
 @media only screen and (min-width: 576px) {
-  .col-half { width: 50%; }
+  .col-half {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  .logo {
+    width: 75%;
+  }
 }
