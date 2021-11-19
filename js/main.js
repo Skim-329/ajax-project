@@ -12,6 +12,18 @@ var wineTitle;
 
 function getWine(event) {
   event.preventDefault();
+
+  // Code to display loader here
+  const show = loader => {
+    loader.classList.remove('hidden');
+  };
+
+  const hide = loader => {
+    loader.classList.add('hidden');
+  };
+
+  show(document.querySelector('.lds-grid'));
+
   var winerec = document.querySelector('#winerec');
   var wineImage = document.querySelector('#wine-image');
   winerec.innerHTML = '';
@@ -23,11 +35,15 @@ function getWine(event) {
   var foodParam = 'food=' + accessForm.elements.food.value;
   var maxPriceParam = 'maxPrice=' + accessForm.elements.price.value;
   var apiKey = 'apiKey=813583d5fed0439d9bc095ff4b5c0ac4';
-  var requestPath = url + '?' + foodParam + delimiter + maxPriceParam + delimiter + apiKey;
+  var requestPath =
+    url + '?' + foodParam + delimiter + maxPriceParam + delimiter + apiKey;
 
   xhr.open('GET', requestPath);
   xhr.responseType = 'json';
   xhr.addEventListener('load', function () {
+    // Code to hide loader here
+    hide(document.querySelector('.lds-grid'));
+
     if (xhr.response.pairingText !== '') {
       var newEl = document.createElement('h3');
       var newText = document.createTextNode(xhr.response.pairingText);
@@ -41,12 +57,23 @@ function getWine(event) {
       $favsHeart.className = 'view';
     } else {
       var newBadEl = document.createElement('h3');
-      var newBadText = document.createTextNode('No matches were found. Please try again.');
+      var newBadText = document.createTextNode(
+        'No matches were found. Please try again.'
+      );
       newBadEl.appendChild(newBadText);
       winerec.appendChild(newBadEl);
       $favsHeart.className = 'view hidden';
     }
   });
+  xhr.addEventListener('error', errorMessage);
+
+  function errorMessage(event) {
+    var netErrEl = document.createElement('h3');
+    var netErrText = document.createTextNode('A network error has occurred.');
+    netErrEl.appendChild(netErrText);
+    winerec.appendChild(netErrEl);
+    $favsHeart.className = 'view hidden';
+  }
   xhr.send();
   viewRecs(event);
   document.querySelector('#main-form').reset();
