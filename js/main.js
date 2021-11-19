@@ -65,6 +65,15 @@ function getWine(event) {
       $favsHeart.className = 'view hidden';
     }
   });
+  xhr.addEventListener('error', errorMessage);
+
+  function errorMessage(event) {
+    var netErrEl = document.createElement('h3');
+    var netErrText = document.createTextNode('A network error has occurred.');
+    netErrEl.appendChild(netErrText);
+    winerec.appendChild(netErrEl);
+    $favsHeart.className = 'view hidden';
+  }
   xhr.send();
   viewRecs(event);
   document.querySelector('#main-form').reset();
