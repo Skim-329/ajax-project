@@ -6,7 +6,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 10px 10%;
+  padding: 0.7rem 4rem;
   background-color: black;
 }
 
@@ -15,50 +15,50 @@ header {
   margin-right: auto;
 }
 
-.dropbtn {
+.drop-btn {
   background-color: rgb(157, 82, 232);
   color: white;
-  padding: 7px 20px;
+  padding: 0.6rem 1.2rem;
   width: 106px;
   font-family: nunito, sans-serif;
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: center;
   letter-spacing: 0.1rem;
   border: none;
   cursor: pointer;
 }
 
-.dropdown-content {
+.drop-down-content {
   display: none;
   position: absolute;
   background-color: rgb(157, 82, 232);
   width: 106px;
 }
 
-.dropdown-content a {
+.drop-down-content a {
   color: white;
   font-family: nunito, sans-serif;
   font-weight: 200;
   text-align: left;
-  padding: 12px 20px;
+  padding: 0.6rem 1.2rem;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content a:hover {
+.drop-down-content a:hover {
   background-color: lightgray;
   color: rgb(157, 82, 232);
   transition: all 0.4s ease 0s;
   font-weight: bold;
 }
 
-.dropdown:hover .dropdown-content {
+.drop-down:hover .drop-down-content {
   display: block;
 }
 
-.mainText {
-  padding-top: 55px;
-  padding-bottom: 40px;
+.main-text {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
   width: 250px;
   margin: 0 auto;
 }
@@ -77,9 +77,9 @@ hr {
   margin: 0 auto;
 }
 
-.subText {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.sub-text {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   width: 255px;
   margin: 0 auto;
 }
@@ -90,7 +90,7 @@ h3 {
   text-align: center;
 }
 
-.whatFood {
+.what-food {
   font-family: nunito, sans-serif;
   font-weight: 200;
   font-size: 0.8rem;
@@ -104,11 +104,11 @@ h3 {
   background-color: rgb(224, 224, 224);
   border: none;
   border-radius: 5px;
-  padding-left: 15px;
+  padding-left: 1rem;
   margin-bottom: 25px;
 }
 
-.priceRange {
+.price-range {
   font-family: nunito, sans-serif;
   font-weight: 200;
   font-size: 0.8rem;
@@ -122,15 +122,15 @@ h3 {
   background-color: rgb(224, 224, 224);
   border: none;
   border-radius: 5px;
-  padding-left: 15px;
+  padding-left: 1rem;
 }
 
 form {
   width: 300px;
   margin: 0 auto;
   margin-top: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 }
 
 input[type="submit"] {
@@ -147,9 +147,9 @@ input[type="submit"] {
   display: block;
 }
 
-#winerec {
-  padding-top: 55px;
-  padding-bottom: 40px;
+#wine-rec {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   width: 250px;
   margin: 0 auto;
   display: flex;
@@ -157,23 +157,23 @@ input[type="submit"] {
 }
 
 #wine-image {
-  padding-top: 55px;
-  padding-bottom: 30px;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   width: 250px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 
-#addtofav {
-  padding-bottom: 15px;
+#add-to-fav {
+  padding-bottom: 1rem;
   width: 30px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 
-.homepagebtn {
+.home-page-btn {
   width: 120px;
   height: 35px;
   background-color: rgb(63, 220, 38);
@@ -188,7 +188,7 @@ input[type="submit"] {
   margin-bottom: 50px;
 }
 
-.homepagebtn2 {
+.home-page-btn-2 {
   width: 120px;
   height: 35px;
   background-color: rgb(63, 220, 38);
@@ -204,7 +204,7 @@ input[type="submit"] {
   margin-bottom: 50px;
 }
 
-.homepagebtn3 {
+.home-page-btn-3 {
   width: 120px;
   height: 35px;
   background-color: rgb(63, 220, 38);
@@ -231,13 +231,13 @@ ul {
   margin-bottom: 55px;
 }
 
-.nameOfFavWine {
+.name-of-fav-wine {
   display: block;
   margin: 0 auto;
   margin-bottom: 10px;
 }
 
-.picOfFavWine {
+.pic-of-fav-wine {
   display: block;
   margin: 0 auto;
 }
@@ -264,10 +264,10 @@ ul {
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 15px;
-  padding-bottom: 30px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   width: 40%;
   text-align: center;
   border-radius: 5px;
@@ -280,6 +280,112 @@ i.delete-icon {
   cursor: pointer;
 }
 
-.subbutton {
+.sub-button {
   cursor: pointer;
+  background-color: rgb(157, 82, 232);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-family: nunito, sans-serif;
+  font-weight: 600;
+}
+
+.sub-button:hover {
+  box-shadow:
+    0 10px 10px 0 rgba(0, 0, 0, 0.24),
+    0 10px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.submit-button-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.lds-grid.hidden {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  animation: lds-grid 1.2s linear infinite;
+}
+
+.lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+
+.lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+
+.lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+
+.lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+
+.lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+
+.lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+
+@keyframes lds-grid {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
 }
