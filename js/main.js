@@ -3,17 +3,16 @@ var $views = document.querySelectorAll('.view');
 var $favs = document.querySelector('.favs');
 var $about = document.querySelector('.about');
 var $logo = document.querySelector('.logo');
-var $favsHeart = document.getElementById('addtofav');
-var $home = document.querySelector('.homepagebtn');
-var $home2 = document.querySelector('.homepagebtn2');
-var $home3 = document.querySelector('.homepagebtn3');
+var $favsHeart = document.getElementById('add-to-fav');
+var $home = document.querySelector('.home-page-btn');
+var $home2 = document.querySelector('.home-page-btn-2');
+var $home3 = document.querySelector('.home-page-btn-3');
 var imageUrl;
 var wineTitle;
 
 function getWine(event) {
   event.preventDefault();
 
-  // Code to display loader here
   const show = loader => {
     loader.classList.remove('hidden');
   };
@@ -24,7 +23,7 @@ function getWine(event) {
 
   show(document.querySelector('.lds-grid'));
 
-  var winerec = document.querySelector('#winerec');
+  var winerec = document.querySelector('#wine-rec');
   var wineImage = document.querySelector('#wine-image');
   winerec.innerHTML = '';
   wineImage.innerHTML = '';
@@ -41,7 +40,6 @@ function getWine(event) {
   xhr.open('GET', requestPath);
   xhr.responseType = 'json';
   xhr.addEventListener('load', function () {
-    // Code to hide loader here
     hide(document.querySelector('.lds-grid'));
 
     if (xhr.response.pairingText !== '') {
@@ -133,11 +131,11 @@ function insertContent(entry) {
   $LI.setAttribute('class', 'content');
 
   var $title = document.createElement('h3');
-  $title.setAttribute('class', 'nameOfFavWine');
+  $title.setAttribute('class', 'name-of-fav-wine');
   $title.textContent = entry.title;
 
   var $image = document.createElement('img');
-  $image.setAttribute('class', 'picOfFavWine');
+  $image.setAttribute('class', 'pic-of-fav-wine');
   $image.setAttribute('src', entry.imageUrl);
 
   $LI.appendChild($title);

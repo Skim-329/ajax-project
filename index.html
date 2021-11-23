@@ -4,22 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="Wine&Dine" />
-    <meta
-      name="image"
-      content="https://cdn.dribbble.com/users/15748/screenshots/4806607/winebottle.png"
-    />
+    <meta name="image" content="images/Lovo.svg" />
     <title>Simon Kim - AJAX Project</title>
     <link rel="icon" href="images/favicon.ico" />
-    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
       <img class="logo" src="images/Logo.svg" alt="logo" />
-      <div class="dropdown">
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
+      <div class="drop-down">
+        <button class="drop-btn">Menu</button>
+        <div class="drop-down-content">
           <a class="favs" href="#">Favorites</a>
           <a class="about" href="#">About</a>
         </div>
@@ -29,11 +25,11 @@
       <div class="view" data-view="landing-page">
         <div class="row">
           <div class="col-half">
-            <div class="mainText">
+            <div class="main-text">
               <h1>Discover which wines pair best with your meal!</h1>
             </div>
             <hr />
-            <div class="subText">
+            <div class="sub-text">
               <h3>
                 Get access to thousands of wines based on meal and maximum
                 price.
@@ -42,7 +38,8 @@
           </div>
           <div class="col-half">
             <form id="main-form">
-              <label class="whatFood" for="food">What will you be eating?</label
+              <label class="what-food" for="food"
+                >What will you be eating?</label
               ><br />
               <input
                 class="text"
@@ -52,7 +49,7 @@
                 placeholder="e.g. Steak"
                 required="required"
               /><br />
-              <label class="priceRange" for="price"
+              <label class="price-range" for="price"
                 >What is your maximum price?</label
               ><br />
               <input
@@ -63,12 +60,9 @@
                 placeholder="e.g. 50"
                 required="required"
               />
-              <input
-                class="subbutton"
-                type="submit"
-                name="submit"
-                value="SUBMIT"
-              />
+              <div class="submit-button-container">
+                <button class="sub-button" type="submit">SUBMIT</button>
+              </div>
             </form>
           </div>
         </div>
@@ -81,7 +75,7 @@
         </div>
         <div class="row">
           <div class="col">
-            <div class="mainText">
+            <div class="main-text">
               <h1>Based on your selections...</h1>
             </div>
             <div class="lds-grid">
@@ -98,26 +92,26 @@
             <hr />
           </div>
           <div class="col-half">
-            <div id="winerec"></div>
+            <div id="wine-rec"></div>
           </div>
           <div class="col-half">
             <div id="wine-image"></div>
             <img
               class="view hidden"
-              id="addtofav"
-              src="images/addtofav.svg"
+              id="add-to-fav"
+              src="images/add-to-fav.svg"
               alt="addtofav"
             />
           </div>
           <div class="col">
-            <button class="homepagebtn" type="button">HOME</button>
+            <button class="home-page-btn" type="button">HOME</button>
           </div>
         </div>
       </div>
       <div class="view hidden" data-view="favorite-page">
         <div class="row">
           <div class="col">
-            <div class="mainText">
+            <div class="main-text">
               <h1>Favorites</h1>
             </div>
             <hr />
@@ -126,18 +120,18 @@
             <ul class="myFavorites"></ul>
           </div>
           <div class="col">
-            <button class="homepagebtn2" type="button">HOME</button>
+            <button class="home-page-btn-2" type="button">HOME</button>
           </div>
         </div>
       </div>
       <div class="view hidden" data-view="about-page">
         <div class="row">
           <div class="col">
-            <div class="mainText">
+            <div class="main-text">
               <h1>About</h1>
             </div>
             <hr />
-            <div class="subText">
+            <div class="sub-text">
               <h3>
                 Hello! My name is Simon and I am creating an AJAX project to
                 demonstrate my knowledge of HTML, CSS and JavaScript! In
@@ -148,7 +142,7 @@
                 Enjoy!
               </h3>
             </div>
-            <button class="homepagebtn3" type="button">HOME</button>
+            <button class="home-page-btn-3" type="button">HOME</button>
           </div>
         </div>
       </div>
