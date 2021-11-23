@@ -15,6 +15,9 @@ Hello! My name is Simon and I created this AJAX project to demonstrate my knowle
 - HTML5
 - CSS3
 - JavaScript
+- AJAX
+- JSON
+- Figma
 
 ## Features
 
@@ -27,4 +30,17 @@ Hello! My name is Simon and I created this AJAX project to demonstrate my knowle
 
 ## Preview
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Wine&Dine recommended wine")
+![alt text](images/wine-and-dine.gif "Wine&Dine recommended wine")
+
+## Stretch Features
+
+- User can purchase recommended wine with an online retailer link.
+
+## Getting Started
+
+1. Clone the repository.
+   ```
+      git clone git@github.com:Skim-329/ajax-project.git
+      cd ajax-project
+   ```
+2. Open the index.html located in the root folder and view the application by opening in a default browser.
