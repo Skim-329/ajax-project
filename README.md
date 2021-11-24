@@ -8,7 +8,7 @@ Hello! My name is Simon and I created this AJAX project to demonstrate my knowle
 
 ## Live Demo
 
-- Try the application live at [https://skim-329.github.io/ajax-project/]
+- Try the application live at [https://skim-329.github.io/wine-and-dine/]
 
 ## Technologies Used
 
