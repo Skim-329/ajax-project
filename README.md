@@ -40,7 +40,7 @@ Hello! My name is Simon and I created this AJAX project to demonstrate my knowle
 
 1. Clone the repository.
    ```
-      git clone git@github.com:Skim-329/ajax-project.git
-      cd ajax-project
+      git clone git@github.com:Skim-329/wine-and-dine.git
+      cd wine-and-dine
    ```
 2. Open the index.html located in the root folder and view the application by opening in a default browser.
