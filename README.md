@@ -1,6 +1,6 @@
 # Wine & Dine
 
-A dynamic HTML, CSS and JavaScript web application for wine enthusiasts and cooks who want to find wine pairings
+A dynamic HTML, CSS and JavaScript web application for wine enthusiasts and cooks who want to find wine pairings based on food and maximum price!
 
 ## Project Rationale
 
